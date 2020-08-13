@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- Wyszukiwanie ma być przyciskiem akcji -->
+
+    <!-- Ustawienia mają być zawsze ukryte -->
+    <item android:id="@+id/action_settings"
+        android:title="Ustawienia"
+        android:showAsAction="never" />
+</menu>

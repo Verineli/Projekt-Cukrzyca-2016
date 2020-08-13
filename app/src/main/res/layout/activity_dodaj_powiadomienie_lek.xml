@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.walcius.dzielnypacjent.Powiadomienia.DodajPowiadomienieLek">
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wybierz lek" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinLeki"
+            android:text="Wybierz lek" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:measureWithLargestChild="false"
+        android:nestedScrollingEnabled="true">
+
+        <TimePicker
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/timePicker"
+            android:timePickerMode="spinner" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ToggleButton
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/tButPn"
+            android:textOn="Pn"
+            android:textOff="Pn" />
+
+        <ToggleButton
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/tButWt"
+            android:textOn="Wt"
+            android:textOff="Wt" />
+
+        <ToggleButton
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/tButSr"
+            android:textOn="śr"
+            android:textOff="śr" />
+
+        <ToggleButton
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/tButCzw"
+            android:textOn="Czw"
+            android:textOff="Czw" />
+
+        <ToggleButton
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/tButPt"
+            android:textOn="Pt"
+            android:textOff="Pt" />
+
+        <ToggleButton
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/tButSob"
+            android:textOn="Sob"
+            android:textOff="Sob" />
+
+        <ToggleButton
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/tButNd"
+            android:textOn="Nd"
+            android:textOff="Nd" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/bZapisz"
+            android:text="Zapisz"
+            android:onClick="DodajAlarm"/>
+    </TableRow>
+</TableLayout>

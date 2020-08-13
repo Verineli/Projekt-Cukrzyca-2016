@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">DzielnyPacjent</string>
+    <string name="title_activity_przypominajka">PrzypominajkaLekiActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="sLogin">Login</string>
+    <string name="sHaslo">Hasło</string>
+    <string name="sStareHaslo">Stare hasło</string>
+    <string name="sNoweHaslo">Nowe hasło</string>
+    <string name="sZaloguj">Zaloguj</string>
+    <string name="sZapisz">Zapisz</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

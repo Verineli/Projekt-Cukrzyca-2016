@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.walcius.dzielnypacjent">
+
+    <uses-sdk android:minSdkVersion="11" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light">
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".LekiActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".WynikiActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".BaseActivity" />
+        <activity
+            android:name=".PowiadomieniaActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".UstawieniaActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".PasswordActivity" />
+
+        <service
+            android:name=".AlarmService"
+            android:enabled="true" />
+
+        <receiver android:name=".MainActivity" />
+
+        <activity android:name=".Powiadomienia.DodajPowiadomienieLek" />
+        <activity android:name=".WynikiPokazActivity" />
+        <activity android:name=".WynikiDodajActivity"></activity>
+    </application>
+
+</manifest>
